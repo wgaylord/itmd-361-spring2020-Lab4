@@ -9,9 +9,24 @@
     <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
       <fieldset>
         <legend><strong>My Info</strong></legend>
-        <label>First Name:<input type="text" name="first_name_field"></label>
-        <label>Last Name:<input type="text" name="last_name_field"></label>
-        <label>Phone Number:<input type="text" name="phone_field"></label>
+        <label>First Name:
+          <input type="text" name="first_name_field">
+        </label>
+        <label>Last Name:
+          <input type="text" name="last_name_field">
+        </label>
+        <label>Phone Number:
+          <input type="tel" name="phone_field">
+        </label>
+        <label>Email Address:
+          <input type="email" name="email_field">
+        </label>
+        <label>Gender:
+          <input type="radio" name="gender_field" value="male",id="gender_male"> 
+          <label for="gender_male">Male</label>
+          <input type="radio" name="gender_field" value="female",id="gender_female">
+          <label for="gender_female">Female</label>
+        </label>
       </fieldset>
       <h4>My Availability</h4>
       <fieldset>
