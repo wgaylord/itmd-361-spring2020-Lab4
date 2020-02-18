@@ -21,7 +21,7 @@
         </p>
         <p>
           <label>Phone Number:
-            <input type="tel" name="phone_field">
+            <input type="tel" name="phone_field"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
           </label>
         </p>
         <p>
@@ -53,8 +53,21 @@
       </fieldset>
       <h4>My Availability</h4>
       <fieldset>
-        
+        <p>
+          <p>Days Available:</p>
+          <label><input type=”checkbox" name="available_field" value="sunday"> Sunday</label>
+          <label><input type=”checkbox" name="available_field" value="monday"> Monday</label>
+          <label><input type=”checkbox" name="available_field" value="tuesday"> Tuesday</label>
+          <label><input type=”checkbox" name="available_field" value="wednesday"> Wednesday</label>
+          <label><input type=”checkbox" name="available_field" value="thursday"> Thursday</label>
+          <label><input type=”checkbox" name="available_field" value="friday"> Friday</label>
+          <label><input type=”checkbox" name="available_field" value="saturday"> Saturday</label>
+        </p>
+        <p>
+            <label>Any Comments?<textarea name="comments_field"></textarea></label>
+        </p>
       </fieldset>
+      <input type="hidden" name="hidden_field" value="wgaylord">
       <input type="submit" value="Send Me">
     </form>
   </body>
